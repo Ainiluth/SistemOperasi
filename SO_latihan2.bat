@@ -10,11 +10,8 @@ set /p b=Nilai b =
 set /p c=Nilai c =
 
 rem =============perhitungan==============
-set /a hasil1=((a+b)**2/(a-c))
-set /a hasil2=(b-a/(a-b)**2)
-set /a hasil=hasil1*hasil2
+set /a hasil=(((a+b)**2)/(a-c))*((b-a)/((a-b)**2))
 
-cls
 rem ==============output==================
 echo -------------------------------------
 echo       Perhitungan  Matematika
