@@ -1,6 +1,6 @@
 @echo off
 title Setting My Komputer
-:Setting
+:setting
 color b5
 cls
 echo ------------------------------------
@@ -15,7 +15,7 @@ echo       [6] Open Startup
 echo       [7] Chrome 
 echo       [88] Kembali               [0] Keluar
 echo.
-set /p "pilihanmenu=Masukkan Pilihan Menu:"
+set /p "pilihmenu=Masukkan Pilihan Menu:"
 if %pilihmenu%==1   goto Keyboard
 if %pilihmenu%==2   goto Language
 if %pilihmenu%==3   goto Date
@@ -45,15 +45,15 @@ cls
 start Netplwiz.exe
 goto Setting
 pause
-:Sound
+:sound
 cls
 start SndVol.exe 
 goto setting 
 pause
-:Startup
+:startup
 start msconfig
 goto Settingpause
-:Chrome
+:chrome
 "C:\Program Files\Google\Chrome\Application\chrome.exe"
 goto setting 
 :back
