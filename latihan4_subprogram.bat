@@ -82,12 +82,15 @@ if "%choice%"=="3" goto exit
 		pause
 		:startup
 		start msconfig
-		goto Settingpause
+		goto Setting
+		pause
 		:chrome
 		"C:\Program Files\Google\Chrome\Application\chrome.exe"
 		goto setting 
+		pause
 		:back
 		goto begin
+		pause
 
 
 	:resto
